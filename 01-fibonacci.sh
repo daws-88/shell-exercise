@@ -9,5 +9,5 @@ do
     x=$Y
     y=$next
 done 
-echo "series is $next"
+echo "series is"
 
