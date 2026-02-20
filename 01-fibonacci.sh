@@ -6,7 +6,8 @@ for (( i=1; i<=n; i++ ))
 do
     echo "$x"
     next=$(($x+$y))
-    echo "$y"
+    x=$Y
+    y=$next
 done 
 echo "series is $next"
 
