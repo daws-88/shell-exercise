@@ -1,6 +1,6 @@
 -  name: variables as plays
    hosts: local
-   connections: local
+   connection: local
    vars:
     COURSE: Devops
     DURATION: 120HRS
