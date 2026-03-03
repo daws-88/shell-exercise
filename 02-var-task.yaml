@@ -6,9 +6,9 @@
      DURATION: 120 120HRS
      TRAINER: shiva kunmar
    tasks:
-   - name: print course 
+   - name: print the course info
      vars:
-     COURSE: Azure
+       COURSE: Azure
      ansible.builtin.debug:
         msg: "Course name is: {{ COURSE }}, Duration is: {{ DURATION }}, Trainer is: {{ TRAINER }}"
   
