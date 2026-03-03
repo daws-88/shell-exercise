@@ -2,12 +2,12 @@
    hosts: local
    connection: local
    vars:
-    COURSE: Devops
-    DURATION: 120HRS
-    TRAINER: shiva kunmar
-    tasks:
-    - name: print Course info
-    vars:
+     COURSE: Devops
+     DURATION: 120HRS
+     TRAINER: shiva kunmar
+   tasks:
+   - name: print Course info
+   vars:
       COURSE: Azure
-    ansible.builtin.debug:
-      msg: "Course name is: {{ COURSE }}"
+      ansible.builtin.debug:
+        msg: "Course name is: {{ COURSE }}"
