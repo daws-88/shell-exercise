@@ -1,10 +1,6 @@
 - name: variables as plays
   hosts: local
   connection: local
-  vars:
-    COURSE: Devops
-    DURATION: 120HRS
-    TRAINER: shiva kunmar
   tasks:
   - name: print Course info
     ansible.builtin.debug:
