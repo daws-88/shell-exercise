@@ -5,10 +5,10 @@
     ami_id: "ami-0220d79f3f480ecf5"
     sg_id: "sg-00234e667183faf3a"
     zone_id: "Z0209787199P76DBHQQAW"
-    intances:
+    instances:
     - mongodb
   tasks:
-  - name: crate ec2-intance
+  - name: crate ec2-instance
     amazon.aws.ec2_instance:
       name: "{ item }"
       region: us-east-1 
@@ -18,7 +18,7 @@
       state: running
       tags:
         name: "{{ item }}"
-    loop: "{{ intances }}"
+    loop: "{{ instances }}"
     register: ec2_output
 
   - name: print ec2_output
